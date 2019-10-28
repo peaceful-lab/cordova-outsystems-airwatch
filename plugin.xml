@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<plugin id="com.outsystems.plugins.airwatch" version="1.3.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>OutSystems AirWatch</name>
+    <description>OutSystems plugin for AirWatch</description>
+    <author>OutSystems Inc</author>
+
+    <engines>
+        <engine name="cordova" version=">=3.4.0"/>
+    </engines>
+
+    <!-- Global hooks -->
+    <hook type="before_plugin_install" src="hooks/installAirWatch.js"/>
+    <hook type="before_plugin_uninstall" src="hooks/removeAirWatch.js"/>
+    
+    <!-- Android -->
+    <!-- <platform name="android"> -->
+
+        <!-- Gradle reference -->
+        <!--  <framework src="libs/build.gradle" custom="true" type="gradleReference" /> -->
+
+        <!-- Android hooks -->
+        <!-- <hook type="after_plugin_install" src="hooks/removeJars.js" /> -->
+    <!-- </platform> -->
+
+</plugin>
